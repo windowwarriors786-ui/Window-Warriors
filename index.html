@@ -434,7 +434,7 @@
         </div>
         <div class="contact-item">
           <div class="contact-item-label">Email</div>
-          <div class="contact-item-value"><a href="mailto:Window.warriors786@gmail.com">Window.warriors786@gmail.com</a></div>
+          <div class="contact-item-value"><a href="/cdn-cgi/l/email-protection#fbac92959f948cd58c9a898992948988ccc3cdbb9c969a9297d5989496"><span class="__cf_email__" data-cfemail="782f11161c170f560f190a0a11170a0b4f404e381f15191114561b1715">[email&#160;protected]</span></a></div>
         </div>
         <div class="contact-item">
           <div class="contact-item-label">Service Area</div>
@@ -446,11 +446,11 @@
         </div>
       </div>
     </div>
-    <div class="contact-form">
-      <input type="text" placeholder="Your Name"/>
-      <input type="tel" placeholder="Phone Number"/>
-      <input type="email" placeholder="Email Address"/>
-      <select>
+    <form class="contact-form" action="https://formspree.io/f/mreyzpqg" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required/>
+      <input type="tel" name="phone" placeholder="Phone Number" required/>
+      <input type="email" name="email" placeholder="Email Address" required/>
+      <select name="service" required>
         <option value="" disabled selected>Select a Service</option>
         <option>Exterior Window Cleaning</option>
         <option>Interior Window Cleaning</option>
@@ -459,10 +459,10 @@
         <option>Glass Staircase Cleaning</option>
         <option>Multiple / Other</option>
       </select>
-      <input type="text" placeholder="City / Area"/>
-      <textarea placeholder="Tell us about your home and what you need..."></textarea>
-      <button class="btn-submit" type="button">Request a Free Quote →</button>
-    </div>
+      <input type="text" name="city" placeholder="City / Area"/>
+      <textarea name="message" placeholder="Tell us about your home and what you need..."></textarea>
+      <button class="btn-submit" type="submit">Request a Free Quote →</button>
+    </form>
   </div>
 </section>
 
@@ -505,19 +505,19 @@
     </div>
     <div class="apply-form-section" id="apply-form">
       <div class="apply-form-title">Submit Your Application</div>
-      <div class="apply-form">
-        <input class="full" type="text" placeholder="Full Name"/>
-        <input type="tel" placeholder="Phone Number"/>
-        <input type="email" placeholder="Email Address"/>
-        <input type="text" placeholder="City / Area"/>
-        <select class="full">
+      <form class="apply-form" action="https://formspree.io/f/mnjgapdj" method="POST">
+        <input class="full" type="text" name="name" placeholder="Full Name" required/>
+        <input type="tel" name="phone" placeholder="Phone Number" required/>
+        <input type="email" name="email" placeholder="Email Address" required/>
+        <input type="text" name="city" placeholder="City / Area"/>
+        <select class="full" name="role" required>
           <option value="" disabled selected>Which role are you applying for?</option>
           <option>Window Cleaner</option>
           <option>Sales Representative</option>
         </select>
-        <textarea class="full" placeholder="Tell us a bit about yourself and why you'd be a great fit..."></textarea>
-        <div class="full"><button class="btn-submit" type="button" style="width:100%">Submit Application →</button></div>
-      </div>
+        <textarea class="full" name="message" placeholder="Tell us a bit about yourself and why you'd be a great fit..."></textarea>
+        <div class="full"><button class="btn-submit" type="submit" style="width:100%">Submit Application →</button></div>
+      </form>
     </div>
   </div>
 </section>
@@ -529,11 +529,4 @@
     <a href="#services">Services</a>
     <a href="#areas">Areas</a>
     <a href="#about">About</a>
-    <a href="#hiring">Careers</a>
-    <a href="#contact">Contact</a>
-  </div>
-  <div class="footer-copy">Professional Cleaning · Greater Toronto Area</div>
-</footer>
-
-</body>
-</html>
+    <a href="#hiring">Careers<
